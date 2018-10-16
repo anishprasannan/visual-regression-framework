@@ -4,5 +4,3 @@
 .gradle/
 build/
 out/
-
-**/resources/baseline/
