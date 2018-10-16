@@ -1,0 +1,11 @@
+dependencies {
+	compile('org.slf4j:slf4j-simple:1.7.10')
+	compile('junit:junit:4.12')
+	compile('commons-codec:commons-codec:1.11')
+	compile('commons-io:commons-io:2.6')
+	compile('org.seleniumhq.selenium:selenium-java:3.7.1')
+	compile('org.concordion:concordion:2.0.2')
+	compile('org.concordion:concordion-parallel-run-extension:1.1.0')
+	compile('org.concordion:concordion-screenshot-extension:1.1.2')
+	compile('com.relevantcodes:extentreports:2.40.2')
+}

@@ -1,0 +1,8 @@
+*.iml
+
+.idea/
+.gradle/
+build/
+out/
+
+**/resources/baseline/

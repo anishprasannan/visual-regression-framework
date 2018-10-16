@@ -1,0 +1,25 @@
+plugins {
+	id 'org.unbroken-dome.test-sets' version '1.5.1'
+	id 'com.github.sherter.google-java-format' version '0.6'
+}
+
+defaultTasks "clean"
+
+apply plugin: 'java'
+
+apply from: "repositories.gradle", to: repositories
+apply from: "dependencies.gradle"
+
+testSets {
+	concordion { dirName = 'concordion' }
+	logonclient { dirName = 'logonclient' }
+	vanilla { dirName = 'vanilla' }
+	xbrowser { dirName = 'xbrowser' }
+}
+
+concordion.systemProperties = System.properties
+logonclient.systemProperties = System.properties
+vanilla.systemProperties = System.properties
+xbrowser.systemProperties = System.properties
+
+

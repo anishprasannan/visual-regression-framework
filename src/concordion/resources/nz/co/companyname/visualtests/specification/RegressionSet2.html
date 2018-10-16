@@ -1,0 +1,29 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+
+<head>
+    <title>Feature: Concordion Tests</title>
+    <link href="concordion.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<div c:example="input">
+    <h2 c:execute="logExample(#TEXT)">Is input rendered</h2>
+    <dl>
+        <dt>Given:</dt>
+        <dd>I am a user of the sample page</dd>
+    </dl>
+    <dl>
+        <dt>When:</dt>
+        <dd c:execute="login()">I view the sample page</dd>
+    </dl>
+    <dl>
+        <dt>Then:</dt>
+        <dd c:assertTrue="isInputRendered()">I can see the input, rendered</dd>
+    </dl>
+</div>
+
+</body>
+</html>
+
