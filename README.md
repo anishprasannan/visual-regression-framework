@@ -183,3 +183,14 @@ Run the sample concordion or vanilla tests with the below html file.
 
 Use https://www.npmjs.com/package/serve or similar to serve the page.
 Run the tests in the baseline mode, to create the baseline, and then in test mode.
+
+## Hiccups that you may have
+
+* The intial `./gradlew build` may fail because of formatting issues. Please use
+`./gradlew goJF` as described in https://github.com/sherter/google-java-format-gradle-plugin
+
+* The sample tests in the repo use Firefox as default browser. Setup your geckodriver,
+from https://github.com/mozilla/geckodriver. Add the `-Dwebdriver.gecko.driver`
+option with the path to the exe, in the gradle commands.
+
+* Use `--info` option for a detailed log when you run the tests.
